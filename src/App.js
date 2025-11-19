@@ -1,12 +1,29 @@
 import './App.css';
-import logements from './data/logements.json';
+import { Routes, Route, Link } from 'react-router-dom';
+
+import Home from './pages/Home/home';
+import About from './pages/About/about';
+import Logement from './pages/Logement/logement';
+import NotFound from './pages/NotFound/notfound';
 
 function App() {
-  console.log(logements); // just to test
-
   return (
     <div className="App">
-      <h1>Kasa</h1>
+      {/* Simple header / nav just to test routing */}
+      <header>
+        <nav>
+          <Link to="/">Accueil</Link> |{' '}
+          <Link to="/about">À propos</Link>
+        </nav>
+      </header>
+
+      {/* Route definitions */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/logement/:id" element={<Logement />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </div>
   );
 }
