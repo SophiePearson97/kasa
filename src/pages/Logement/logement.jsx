@@ -1,12 +1,22 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from "react-router-dom";
+import logements from "../../data/logements.json";
+
+import Gallery from "../../components/Gallery/Gallery";
+import LogementInfo from "../../components/LogementInfo/LogementInfo";
 
 function Logement() {
   const { id } = useParams();
 
+  const logement = logements.find((item) => item.id === id);
+
+  if (!logement) {
+    return <Navigate to="*" />;
+  }
+
   return (
-    <main>
-      <h1>Logement details</h1>
-      <p>Currently viewing logement with id: {id}</p>
+    <main className="kasa-container" style={{ paddingBottom: "20px" }}>
+      <Gallery pictures={logement.pictures} />
+      <LogementInfo logement={logement} />
     </main>
   );
 }
