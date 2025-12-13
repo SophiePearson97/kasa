@@ -1,8 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./Header.css";
-import logo from "../../assets/logo-kasa.svg"; // export from Figma (recommended)
-// Temporary fallback if you don’t have the logo yet:
-// import logo from "../../logo.svg";
+import logo from "../../assets/logo-kasa.svg";
 
 function Header() {
   return (

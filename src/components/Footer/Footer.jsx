@@ -1,5 +1,5 @@
 import "./Footer.css";
-import logo from "../../assets/logo-kasa-white.svg"; // export from Figma (recommended)
+import logo from "../../assets/logo-kasa-white.svg";
 
 function Footer() {
   return (
