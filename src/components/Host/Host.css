@@ -1,0 +1,33 @@
+.host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.host__name {
+  margin: 0;
+  color: #ff6060;
+  font-size: 18px;
+  width: 95px;
+  text-align: right;
+}
+
+.host__picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #c4c4c4;
+}
+
+@media (max-width: 768px) {
+  .host__name {
+    font-size: 12px;
+    width: 80px;
+  }
+
+  .host__picture {
+    width: 32px;
+    height: 32px;
+  }
+}
