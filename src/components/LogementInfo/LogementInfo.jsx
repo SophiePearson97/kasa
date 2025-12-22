@@ -1,4 +1,4 @@
-import "./LogementInfo.css";
+import "./LogementInfo.scss";
 import TitleLocation from "../TitleLocation/TitleLocation";
 import Tags from "../Tags/Tags";
 import Rating from "../Rating/Rating";

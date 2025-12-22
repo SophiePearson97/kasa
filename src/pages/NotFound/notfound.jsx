@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function NotFound() {
   const styles = {
     wrapper: {
-      minHeight: "calc(100vh - 160px)", // leaves space for header/footer
+      minHeight: "calc(100vh - 160px)",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",

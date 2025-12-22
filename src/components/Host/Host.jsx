@@ -1,4 +1,4 @@
-import "./Host.css";
+import "./Host.scss";
 
 function Host({ host }) {
   return (

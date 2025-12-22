@@ -1,4 +1,4 @@
-import "./CardsSection.css";
+import "./CardsSection.scss";
 import Card from "../Card/Card";
 
 function CardsSection({ logements }) {

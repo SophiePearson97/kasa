@@ -3,21 +3,19 @@
   grid-template-columns: 1fr 1fr;
   gap: 76px;
   margin-top: 24px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 .equipments {
   margin: 0;
   padding-left: 18px;
-}
 
-.equipments li {
-  list-style: none;
-  margin: 4px 0;
-}
-
-@media (max-width: 768px) {
-  .collapses {
-    grid-template-columns: 1fr;
-    gap: 20px;
+  li {
+    list-style: none;
+    margin: 4px 0;
   }
 }

@@ -1,4 +1,4 @@
-import "./Collapses.css";
+import "./Collapses.scss";
 import Collapse from "../Collapse/Collapse";
 
 function Collapses({ description, equipments }) {
